@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>polar | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/radar.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "radar",
+					"categoryField": "Trip planning priorities",
+					"startDuration": 2,
+					"fontSize": 13,
+					"theme": "light",
+					"graphs": [
+						{
+							"bullet": "round",
+							"bulletSize": 9,
+							"id": "AmGraph-1",
+							"lineThickness": 2,
+							"valueField": "Trippin"
+						},
+						{
+							"bullet": "round",
+							"bulletSize": 9,
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"valueField": "Trip Advisor"
+						},
+						{
+							"bullet": "round",
+							"bulletSize": 9,
+							"id": "AmGraph-4",
+							"title": "graph 4",
+							"valueField": "Travel Agencies"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"axisTitleOffset": 20,
+							"gridType": "circles",
+							"id": "ValueAxis-1",
+							"minimum": 0,
+							"axisAlpha": 0.54,
+							"dashLength": 3,
+							"gridAlpha": 0.51
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"Trip planning priorities": "Dynamic",
+							"Trippin": "90",
+							"Trip Advisor": "75",
+							"Travel Agencies": "10"
+						},
+						{
+							"Trip planning priorities": "Time spent pre-planning",
+							"Trippin": "80",
+							"Trip Advisor": "40",
+							"Travel Agencies": "90"
+						},
+						{
+							"Trip planning priorities": "Cost",
+							"Trippin": "60",
+							"Trip Advisor": "60",
+							"Travel Agencies": "10"
+						},
+						{
+							"Trip planning priorities": "Ease of information",
+							"Trippin": "50",
+							"Trip Advisor": "50",
+							"Travel Agencies": "60"
+						},
+						{
+							"Trip planning priorities": "Pricing Transparency",
+							"Trippin": "70",
+							"Trip Advisor": "70",
+							"Travel Agencies": "10"
+						},
+						{
+							"Trip planning priorities": "Live events",
+							"Trippin": "80",
+							"Trip Advisor": "20",
+							"Travel Agencies": "20"
+						},
+						{
+							"Trip planning priorities": "Choices",
+							"Trippin": "30",
+							"Trip Advisor": "80",
+							"Travel Agencies": "50"
+						},
+						{
+							"Trip planning priorities": "Fixed itinerary",
+							"Trippin": "20",
+							"Trip Advisor": "50",
+							"Travel Agencies": "90"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>
