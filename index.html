@@ -15,31 +15,34 @@
 			AmCharts.makeChart("chartdiv",
 				{
 					"type": "radar",
-					"categoryField": "Trip planning priorities",
+					"categoryField": "Factors",
 					"startDuration": 2,
+					"accessibleTitle": "test",
 					"fontSize": 13,
 					"theme": "light",
 					"graphs": [
 						{
+							"balloonText": "[[value]] Trippin",
 							"bullet": "round",
 							"bulletSize": 9,
 							"id": "AmGraph-1",
+							"lineAlpha": 1,
 							"lineThickness": 2,
 							"valueField": "Trippin"
 						},
 						{
+							"balloonText": "[[value]] Tripadvisor/Google Maps",
 							"bullet": "round",
-							"bulletSize": 9,
 							"id": "AmGraph-2",
 							"title": "graph 2",
-							"valueField": "Trip Advisor"
+							"valueField": "Tripadvisor"
 						},
 						{
+							"balloonText": "[[value]] Travel Agencies",
 							"bullet": "round",
-							"bulletSize": 9,
-							"id": "AmGraph-4",
-							"title": "graph 4",
-							"valueField": "Travel Agencies"
+							"id": "AmGraph-3",
+							"title": "graph 3",
+							"valueField": "column-3"
 						}
 					],
 					"guides": [],
@@ -51,6 +54,7 @@
 							"minimum": 0,
 							"axisAlpha": 0.54,
 							"dashLength": 3,
+							"fontSize": 15,
 							"gridAlpha": 0.51
 						}
 					],
@@ -59,52 +63,52 @@
 					"titles": [],
 					"dataProvider": [
 						{
-							"Trip planning priorities": "Dynamic",
+							"column-3": "10",
+							"Factors": "Dynamic",
 							"Trippin": "90",
-							"Trip Advisor": "75",
-							"Travel Agencies": "10"
+							"Tripadvisor": "80"
 						},
 						{
-							"Trip planning priorities": "Time spent pre-planning",
+							"column-3": "95",
+							"Factors": "Time spent pre-planning",
 							"Trippin": "80",
-							"Trip Advisor": "40",
-							"Travel Agencies": "90"
+							"Tripadvisor": "20"
 						},
 						{
-							"Trip planning priorities": "Cost",
+							"column-3": "10",
+							"Factors": "Cost",
 							"Trippin": "60",
-							"Trip Advisor": "60",
-							"Travel Agencies": "10"
+							"Tripadvisor": "60"
 						},
 						{
-							"Trip planning priorities": "Ease of information",
+							"column-3": "60",
+							"Factors": "East of Information",
 							"Trippin": "50",
-							"Trip Advisor": "50",
-							"Travel Agencies": "60"
+							"Tripadvisor": "50"
 						},
 						{
-							"Trip planning priorities": "Pricing Transparency",
+							"column-3": "20",
+							"Factors": "Pricing Transparency",
 							"Trippin": "70",
-							"Trip Advisor": "70",
-							"Travel Agencies": "10"
+							"Tripadvisor": "70"
 						},
 						{
-							"Trip planning priorities": "Live events",
+							"column-3": "10",
+							"Factors": "Live events",
 							"Trippin": "80",
-							"Trip Advisor": "20",
-							"Travel Agencies": "20"
+							"Tripadvisor": "20"
 						},
 						{
-							"Trip planning priorities": "Choices",
+							"column-3": "50",
+							"Factors": "Choices",
 							"Trippin": "30",
-							"Trip Advisor": "80",
-							"Travel Agencies": "50"
+							"Tripadvisor": "80"
 						},
 						{
-							"Trip planning priorities": "Fixed itinerary",
-							"Trippin": "20",
-							"Trip Advisor": "50",
-							"Travel Agencies": "90"
+							"column-3": "90",
+							"Factors": "Fixed Itinerary",
+							"Trippin": "10",
+							"Tripadvisor": "50"
 						}
 					]
 				}
